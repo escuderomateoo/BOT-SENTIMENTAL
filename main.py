@@ -15,7 +15,7 @@ print("¡Modelo cargado con éxito! ✅")
 
 # 2. Preparamos una lista de frases para analizar
 frases_para_analizar = [
-    "Estoy enojado",
+    "Estoy",
     "Estoy triste",
     "Estoy feliz",
 ]
