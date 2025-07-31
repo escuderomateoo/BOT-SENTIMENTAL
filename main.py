@@ -1,6 +1,7 @@
 # Importamos la función 'pipeline' de la biblioteca transformers
-from transformers import pipeline
-
+from transformers import pipeline # type: ignore
+#mport warnings
+#warnings.filterwarnings("ignore", category=FutureWarning)
 # 1. Creamos el pipeline de análisis de sentimiento
 #    - Especificamos la tarea: "sentiment-analysis".
 #    - Elegimos un modelo pre-entrenado. 'nlptown/bert-base-multilingual-uncased-sentiment'
@@ -14,12 +15,9 @@ print("¡Modelo cargado con éxito! ✅")
 
 # 2. Preparamos una lista de frases para analizar
 frases_para_analizar = [
-    "¡Me encantó este curso, aprendí muchísimo!",
-    "El servicio al cliente fue bastante lento y poco útil.",
-    "La película estuvo bien, aunque el final fue predecible.",
-    "Estoy muy decepcionado con la calidad del producto.",
-    "Qué día tan maravilloso para salir a caminar.",
-    "No estoy seguro de si volvería a comprar en esa tienda."
+    "Estoy enojado",
+    "Estoy triste",
+    "Estoy feliz",
 ]
 
 # 3. Usamos el pipeline para obtener el sentimiento de cada frase
