@@ -1,11 +1,11 @@
-#Python 3.10
+#Pyton 3.13
 certifi==2025.7.14
 charset-normalizer==3.4.2
 colorama==0.4.6
 filelock==3.18.0
 fsspec==2025.7.0
-huggingface-hub==0.34.3
-idna==3.10
+huggingface-hub==0.22.2
+idna==3.7
 Jinja2==3.1.4
 MarkupSafe==2.1.5
 mpmath==1.3.0
@@ -26,4 +26,4 @@ torchvision==0.17.2
 tqdm==4.67.1
 transformers==4.54.1
 typing_extensions==4.14.1
-urllib3==2.5.0
+urllib3==2.2.0
